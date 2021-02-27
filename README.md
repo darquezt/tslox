@@ -55,8 +55,8 @@ the syntactic sugar to be desugared explicitly in the parser so the runtime acto
 
 - **Values type**: In the original Java implementation, the (Java) class `Object` is used to represent the type of the Lox values. Since Typescript has sum types, I implemented a more accurate type called (wait for it...) `Value`, defined as:
 
-```ts
-type Value = number | boolean | string | null | LoxCallable | LoxInstance;
-```
+  ```ts
+  type Value = number | boolean | string | null | LoxCallable | LoxInstance;
+  ```
 
 Note that the last two differences have no impact in the end-user of the interpreter and they are just development decisions.
